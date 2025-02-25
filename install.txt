@@ -1,0 +1,2 @@
+windows:  miktex  (latex)
+python environment:   conda install sphinx
