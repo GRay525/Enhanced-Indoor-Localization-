@@ -18,10 +18,10 @@ Advanced 3D indoor positioning system combining RSSI fingerprinting with sensor 
 git clone https://github.com/GRay525/Enhanced-Indoor-Localization-/
 cd main_v3.py
 
-3. Install dependencies
+2. Install dependencies
 pip install -r requirements.txt
 
-4. Core dependencies
+3. Core dependencies
 numpy==1.21.0
 scipy==1.7.0
 matplotlib==3.4.0
@@ -30,10 +30,10 @@ Usage Example
 python
 from localization import joint_estimation, do_plot
 
-5. Generate simulation data
+4. Generate simulation data
 xyz_seat, xyz_target, xyz_anchor, *_ = for_test_generate_simu_data(use_12_anchors=True)
 
-6. Run localization algorithm
+5. Run localization algorithm
 xyz_est, gamma_est, p0_est, *_ = joint_estimation(
     rss_meas, 
     xyz_anchor,
@@ -43,49 +43,13 @@ xyz_est, gamma_est, p0_est, *_ = joint_estimation(
     max_z=2
 )
 
-7. Visualize results
+6. Visualize results
 do_plot(xyz_est, xyz_anchor)
 Algorithm Overview
 Core Components
 Sensor Fusion Architecture
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-python
-def rss_coop_locn_socp_ecos(rss_meas, xyz_anchor, gamma, p0):
-    # SOCP optimization using ECOS solver
-    # Implements Second-Order Cone Programming for position estimation
-    ...
-Path Loss Modeling
-
-python
-def fit_path_loss_model(rss_anchor, xyz_anchor):
-    # Calculate path loss exponent (γ) and reference power (p0)
-    ...
-Visualization Toolkit
-
-python
-def do_plot(xyz_targets, xyz_anchor):
-    # Generate interactive 3D plots with multiple viewports
-    ...
-Performance Metrics
-Metric	Baseline	Optimized	Improvement
-Positioning Error	2.1m	1.4m	33% ↓
-Processing Speed	45ms	32ms	29% ↑
-Signal Stability	72%	91%	26% ↑
-Localization Visualization
-
-Contributing
-Fork the repository
-
-Create feature branch: git checkout -b feature/new-algorithm
-
-Commit changes: git commit -m 'Add innovative localization method'
-
-Push to branch: git push origin feature/new-algorithm
-
-Submit pull request
-
-License
+###License
 Distributed under MIT License. See LICENSE for details.
