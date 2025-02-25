@@ -11,13 +11,14 @@ Advanced 3D indoor positioning system combining RSSI fingerprinting with sensor 
 - 🛠️ **Modular Architecture**: Extendable 2D-to-3D conversion framework
 - 📊 **Visual Analytics**: Built-in 3D visualization with Matplotlib
 
-## Installation
-```bash
-# Clone repository
+
+### Installation
+
+## Clone repository
 git clone https://github.com/yourusername/3d-indoor-localization.git
 cd 3d-indoor-localization
 
-# Install dependencies
+## Install dependencies
 pip install -r requirements.txt
 
 # Core dependencies
@@ -47,6 +48,10 @@ do_plot(xyz_est, xyz_anchor)
 Algorithm Overview
 Core Components
 Sensor Fusion Architecture
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 python
 def rss_coop_locn_socp_ecos(rss_meas, xyz_anchor, gamma, p0):
