@@ -14,14 +14,14 @@ Advanced 3D indoor positioning system combining RSSI fingerprinting with sensor 
 
 ### Installation
 
-# Clone repository
-git clone [https://github.com/yourusername/3d-indoor-localization.git](https://github.com/GRay525/Enhanced-Indoor-Localization-/edit/)
-cd 3d-indoor-localization
+1. Clone repository
+git clone https://github.com/GRay525/Enhanced-Indoor-Localization-/
+cd main_v3.py
 
-# Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
-# Core dependencies
+4. Core dependencies
 numpy==1.21.0
 scipy==1.7.0
 matplotlib==3.4.0
@@ -30,10 +30,10 @@ Usage Example
 python
 from localization import joint_estimation, do_plot
 
-# Generate simulation data
+5. Generate simulation data
 xyz_seat, xyz_target, xyz_anchor, *_ = for_test_generate_simu_data(use_12_anchors=True)
 
-# Run localization algorithm
+6. Run localization algorithm
 xyz_est, gamma_est, p0_est, *_ = joint_estimation(
     rss_meas, 
     xyz_anchor,
@@ -43,14 +43,13 @@ xyz_est, gamma_est, p0_est, *_ = joint_estimation(
     max_z=2
 )
 
-# Visualize results
+7. Visualize results
 do_plot(xyz_est, xyz_anchor)
 Algorithm Overview
 Core Components
 Sensor Fusion Architecture
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 python
