@@ -57,5 +57,5 @@ Sensor Fusion Architecture
 ```
 
 
-###License
-Distributed under MIT License. See LICENSE for details.
+### License
+Distributed under MIT License. 
