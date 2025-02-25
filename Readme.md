@@ -14,11 +14,11 @@ Advanced 3D indoor positioning system combining RSSI fingerprinting with sensor 
 
 ### Installation
 
-## Clone repository
-git clone https://github.com/yourusername/3d-indoor-localization.git
+# Clone repository
+git clone [https://github.com/yourusername/3d-indoor-localization.git](https://github.com/GRay525/Enhanced-Indoor-Localization-/edit/)
 cd 3d-indoor-localization
 
-## Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
 # Core dependencies
